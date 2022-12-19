@@ -94,7 +94,7 @@ class FirstFragment : Fragment(),TransactionRecycler.OnItemClickListener {
         myRecycler.apply {
             layoutManager = LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
             val decoration = DividerItemDecoration(context,DividerItemDecoration.VERTICAL)
-            addItemDecoration(decoration)
+//            addItemDecoration(decoration)
 
         }
 
