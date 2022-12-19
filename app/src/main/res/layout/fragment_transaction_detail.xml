@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransactionDetail">
+
+
+    <TextView
+        android:id="@+id/dateR0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="date"
+        android:text="2022-01-01"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/amountRO"
+        app:layout_constraintTop_toBottomOf="@+id/amountRO" />
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Date"
+        app:layout_constraintStart_toStartOf="@+id/amountLabelDetails"
+        app:layout_constraintTop_toBottomOf="@+id/amountLabelDetails" />
+
+    <TextView
+        android:id="@+id/merchantLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Payment made to:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/merchantNameDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sankara Supermarket"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/merchantLabel"
+        app:layout_constraintTop_toTopOf="@+id/merchantLabel" />
+
+    <TextView
+        android:id="@+id/amountRO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="UGX 000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/merchantNameDetails"
+        app:layout_constraintTop_toBottomOf="@+id/merchantNameDetails" />
+
+    <TextView
+        android:id="@+id/amountLabelDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Amount Paid"
+        app:layout_constraintStart_toStartOf="@+id/merchantLabel"
+        app:layout_constraintTop_toBottomOf="@+id/merchantLabel" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="90dp"
+        android:clickable="true"
+        android:src="@drawable/bag_add_outline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/invoiceItemsRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateR0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ImpalaPay.DefaultStyle" parent="Theme.ImpalaPay">
+        <item name="android:textViewStyle">@style/RobotoButtonStyle</item>
+    </style>
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+</resources>

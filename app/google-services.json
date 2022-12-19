@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "646702741615",
+    "project_id": "impala-payments",
+    "storage_bucket": "impala-payments.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646702741615:android:2ccf25343379f8c3ff359a",
+        "android_client_info": {
+          "package_name": "cloud.nymbow.impalapay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646702741615-ujd1k5o6tnh16v3mkv1nvduadrtbvs22.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cloud.nymbow.impalapay",
+            "certificate_hash": "78f983718c53c68f73d4ad57013bb39fcf2c85bf"
+          }
+        },
+        {
+          "client_id": "646702741615-s3i3g4a7ietbh21k2ghgat8g0nl09tjc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLvRfAtt10bKJXXN_IppIAOIfCBB5x9TA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646702741615-s3i3g4a7ietbh21k2ghgat8g0nl09tjc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
