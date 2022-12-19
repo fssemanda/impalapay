@@ -47,6 +47,7 @@ class FirstFragment : Fragment(),TransactionRecycler.OnItemClickListener {
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding.root
 
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -62,7 +63,7 @@ class FirstFragment : Fragment(),TransactionRecycler.OnItemClickListener {
     }
     private fun initializeViewModel(){
         viewModel = ViewModelProvider(this).get(DashboardViewModel::class.java)
-//        viewModel2 = ViewModelProvider(this).get(DashboardViewModel::class.java)
+       viewModel2 = ViewModelProvider(this).get(DashboardViewModel::class.java)
     }
     private fun loadAccountData(uid:String){
         viewModel.userAccountDataObservable().observe(this.viewLifecycleOwner,Observer<UserAccountData?>{
